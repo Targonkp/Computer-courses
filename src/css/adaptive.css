@@ -1,0 +1,129 @@
+@media only screen and (max-width: 1650px){
+ .wrapper{
+     padding: 0 180px;
+ }
+ .menu__items{
+      margin: 0 50px 0 0;
+ }
+}
+
+@media only screen and (max-width: 1024px){
+    .wrapper{
+        padding: 0 80px;
+    }
+
+    .header-top{
+        padding: 40px 30px;
+    }
+
+    .menu__items{
+        margin: 0 8px 0 0;
+    }
+
+    .menu__items>a{
+        display: inline-block;
+        padding: 5px 2px;
+        background: rgb(59, 59, 50, 0.5);
+    }
+
+    .features__header{
+        width: 100%;
+        font-size: 22px;
+        line-height: 30px;
+    }
+
+    .logos__items{
+        width: 50%;
+    }
+
+    .logos__items:nth-child(2),
+    .logos__items:nth-child(6){
+        border-right: none;
+    }
+
+    .logos__items:nth-child(5),
+    .logos__items:nth-child(6){
+        border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    }
+}
+
+@media only screen and (max-width: 768px){
+    h1{
+        font-size: 46px;
+        line-height: 54px;
+        padding: 50px 0 0 0;
+    }
+
+    h2{
+        font-size: 36px;
+        line-height: 60px;
+    }
+
+    .header{
+        height:550px;
+    }
+
+    .timer{
+        padding: 36px 0 0 0;
+    }
+
+    .timer__items{
+        padding: 14px;
+    }
+
+    .timer-text__top{
+        font-size: 26px;
+        line-height: 40px;
+    }
+
+    .timer-text__bottom{
+        line-height: 20px;
+    }
+
+    .section-2{
+        padding: 80px 0 0 0;
+    }
+
+    .section-2__left{
+        display: none;
+    }
+
+    .section-2__right{
+        margin: 0 0 0 0;
+    }
+
+    .section-3 {
+        padding: 80px 0 0 0;
+    }
+
+    .section-3__text{
+        margin: 0 0 50px 0;
+    }
+
+    .section-4 {
+        padding: 80px 0 0 0;
+    }
+
+    .features{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 64px 0 0 0;
+    }
+
+    .features__items{
+        width: 100%;
+        margin: 0 0 30px 0;
+        padding: 10px 20px;
+        border: 2px solid #8f6fc1;
+    }
+
+    .features__header{
+        margin: 30px 0 0 0;
+        height: auto;
+    }
+
+    .section-5{
+        padding: 80px 0 0 0;
+    }
+}
