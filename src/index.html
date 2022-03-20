@@ -5,24 +5,55 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Computer-courses</title>
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/adaptive.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-<section class="header">
+<header>
     <div class="header-top">
         <img src="./img/Icon.png" alt="" class="header__icon">
+        <div class="hamburger-menu">
+            <input id="menu__toggle" type="checkbox"/>
+            <label class="menu__btn" for="menu__toggle">
+                <span></span>
+            </label>
+            <ul class="header__menu-mobile">
+                <li class="menu__items"><a href="" class="menu__link">Главная</a></li>
+                <li class="menu__items"><a href="" class="menu__link">Курсы</a></li>
+                <li class="menu__items"><a href="" class="menu__link">Расписание</a></li>
+                <li class="menu__items"><a href="" class="menu__link">Преподаватели</a></li>
+                <li class="menu__items"><a href="" class="menu__link">Рассылка</a></li>
+                <li class="menu__items"><a href="" class="menu__link">Контакты</a></li>
+            </ul>
+        </div>
         <ul class="header__menu">
-            <li class="menu__items"><a href="">Главная</a></li>
-            <li class="menu__items"><a href="">Курсы</a></li>
-            <li class="menu__items"><a href="">Расписание</a></li>
-            <li class="menu__items"><a href="">Преподаватели</a></li>
-            <li class="menu__items"><a href="">Рассылка</a></li>
-            <li class="menu__items"><a href="">Контакты</a></li>
+            <li class="menu__items"><a href="" class="menu__link">Главная</a></li>
+            <li class="menu__items"><a href="" class="menu__link">Курсы</a></li>
+            <li class="menu__items"><a href="" class="menu__link">Расписание</a></li>
+            <li class="menu__items"><a href="" class="menu__link">Преподаватели</a></li>
+            <li class="menu__items"><a href="" class="menu__link">Рассылка</a></li>
+            <li class="menu__items"><a href="" class="menu__link">Контакты</a></li>
         </ul>
         <a href="" class="login">Зайти в кабинет</a>
+        <div class="modal">
+            <div class="modal__content">
+                <span class="modal__close">×</span>
+                <form action="" method="post" class="modal-form">
+                    <label for="login" class="modal-form__label">
+                        <span class="modal-form__title">Логин</span>
+                    <input type="email" text="" class="modal-form__input" id="login" placeholder="Введите e-mail" required>
+                    </label>
+                    <label for="password" class="modal-form__label">
+                        <span class="modal-form__title">Пароль</span>
+                    <input type="text" text="" class="modal-form__input" id="password" placeholder="Введите пароль" required>
+                    </label>
+                    <button type="submit" class="modal-form__button">Войти</button>
+                </form>
+            </div>
+        </div>
     </div>
     <div class="wrapper">
         <h1>Первый курс по компьютерной сборке</h1>
@@ -33,7 +64,7 @@
             <li class="timer__items"><span class="timer-text__top">18</span><span class="timer-text__bottom">Секунд</span></li>
         </ul>
     </div>
-</section>
+</header>
 <section class="section-background section-1">
     <div class="wrapper">
         <div class="section-1__content">
@@ -165,7 +196,131 @@
             <li class="logos__items"><img src="./img/msi-logo.png" alt="" class="logos__image"></li>
             <li class="logos__items"><img src="./img/msi-logo.png" alt="" class="logos__image"></li>
             <li class="logos__items"><img src="./img/msi-logo.png" alt="" class="logos__image"></li>
-        </ul>  
+        </ul>
+    </div>
 </section>
+<section class="section-background section-6">
+    <div class="wrapper">
+        <img src="img/section-6-icon.png" alt="" class="section-6__icon">
+        <h2>Программа обучения</h2>
+        <p class="section-6__text">Больше 90% учеников прошли полный курс и смогли собрать свой первый компьютер</p>
+        <div class="schedule">
+            <div class="schedule__line"></div>
+            <div class="schedule__element">
+                <span class="schedule__title">Неделя №1</span>
+                <p class="schedule__text">Красивая часть курса,
+                    которая помогает в успехе</p>
+            </div>
+            <div class="schedule__element">
+                <span class="schedule__title"></span>
+                <p class="schedule__text"></p>
+            </div>
+            <div class="schedule__element">
+                <span class="schedule__title"></span>
+                <p class="schedule__text"></p>
+            </div>
+            <div class="schedule__element">
+                <span class="schedule__title">Неделя №2</span>
+                <p class="schedule__text">Красивая часть курса,
+                    которая помогает в успехе</p>
+            </div>
+            <div class="schedule__element">
+                <span class="schedule__title">Неделя №3</span>
+                <p class="schedule__text">Красивая часть курса,
+                    которая помогает в успехе</p>
+            </div>
+            <div class="schedule__element">
+                <span class="schedule__title">
+                </span>
+                <p class="schedule__text"></p>
+            </div>
+            <div class="schedule__element">
+                <span class="schedule__title"></span>
+                <p class="schedule__text"></p>
+            </div>
+            <div class="schedule__element">
+                <span class="schedule__title">Неделя №4</span>
+                <p class="schedule__text">Красивая часть курса,
+                    которая помогает в успехе</p>
+            </div>
+            <div class="schedule__element">
+                <span class="schedule__title">Неделя №5</span>
+                <p class="schedule__text">Красивая часть курса,
+                    которая помогает в успехе</p>
+            </div>
+            <div class="schedule__element"><span class="schedule__title"></span>
+                <p class="schedule__text"></p>
+            </div>
+            <div class="schedule__element"><span class="schedule__title"></span>
+                <p class="schedule__text"></p>
+            </div>
+            <div class="schedule__element">
+                <span class="schedule__title">Неделя №6</span>
+                <p class="schedule__text">Красивая часть курса,
+                    которая помогает в успехе</p>
+            </div>
+            <div class="schedule__element">
+                <span class="schedule__title">Неделя №7</span>
+                <p class="schedule__text">Красивая часть курса,
+                    которая помогает в успехе</p>
+            </div>
+            <div class="schedule__element"><span class="schedule__title"></span>
+                <p class="schedule__text"></p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section-background section-7">
+    <div class="wrapper">
+        <div class="section-7__header">
+        <img src="img/section-6-icon.png" alt="" class="section-7__icon">
+        <h2>Ваши преподаватели</h2>
+        </div>
+        <div class="our-teachers__wrapper">
+        <ul class="our-teachers">
+            <li class="our-teachers__element">
+                <img src="img/Ellipse%202.png" alt="" class="our-teachers__image">
+                <span class="our-teachers__title">Дмитрий Иванов</span>
+                <p class="our-teachers__text">Специалист по видеокартам</p>
+                <a href="" class="our-teachers__link">Биография</a>
+            </li>
+            <li class="our-teachers__element">
+                <img src="img/Ellipse%202%20(1).png" alt="" class="our-teachers__image">
+                <span class="our-teachers__title">Дмитрий Иванов</span>
+                <p class="our-teachers__text">Специалист по видеокартам</p>
+                <a href="" class="our-teachers__link">Биография</a>
+            </li>
+            <li class="our-teachers__element">
+                <img src="img/Ellipse%202%20(2).png" alt="" class="our-teachers__image">
+                <span class="our-teachers__title">Дмитрий Иванов</span>
+                <p class="our-teachers__text">Специалист по видеокартам</p>
+                <a href="" class="our-teachers__link">Биография</a>
+            </li>
+        </ul>
+        </div>
+    </div>
+</section>
+<footer class="section-background">
+    <div class="wrapper">
+        <div class="footer-wrap">
+            <h2>Статьи каждую неделю</h2>
+            <p>Больше 90% учеников прошли полный курс и смогли
+                собрать свой первый компьютер</p>
+            <div class="footer-form-wrap">
+                <form action="" class="footer-form-wrap__form">
+                    <input type="email" name="email" placeholder="E-mail" class="footer-form-wrap__email">
+                    <input type="submit" name="submit" class="footer-form-wrap__subscribe" value="Подписаться">
+                </form>
+            </div>
+            <ul class="social-icon">
+                <li class="social-icon__element"><a href="#" class="social-icon__link"><img src="img/Group%2010.png" alt="" class="social-icon__img"></a></li>
+                <li class="social-icon__element"><a href="#" class="social-icon__link"><img src="img/Group%2011.png" alt="" class="social-icon__img"></a></li>
+                <li class="social-icon__element"><a href="#" class="social-icon__link"><img src="img/Group%2012.png" alt="" class="social-icon__img"></a></li>
+                <li class="social-icon__element"><a href="#" class="social-icon__link"><img src="img/Group%2013.png" alt="" class="social-icon__img"></a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+<script src="js/app.js"></script>
 </body>
 </html>

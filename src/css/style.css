@@ -7,6 +7,7 @@ body{
     font-weight: 400;
     font-size: 16px;
     color: #FFFFFF;
+    min-width: 320px;
 }
 
 h1{
@@ -39,7 +40,7 @@ p{
     margin: 0 auto;
 }
 
-.header{
+header{
     background: url("../img/main-screen__bgc.png") no-repeat;
     background-size: cover;
     height: 830px;
@@ -73,6 +74,85 @@ p{
     transition: 0.3s;
 }
 
+.modal{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left:0;
+    top:0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: rgba(0,0,0,0.7);
+}
+
+.modal__content{
+    position: relative;
+    width: 30%;
+    box-sizing: border-box;
+    padding: 38px 24px;
+    margin: 20% auto;
+    background: -webkit-linear-gradient(45deg, rgb(166, 166, 166), rgb(65, 75, 75));
+    background: -moz-linear-gradient(45deg, rgb(166, 166, 166), rgb(65, 75, 75));
+    background: linear-gradient(45deg, rgb(166, 166, 166), rgb(65, 75, 75));
+    box-shadow: 10px 5px 5px #7C6AFA;
+    animation-name: modal-animation;
+    animation-duration: 0.5s;
+}
+
+.modal-form__label{
+    margin: 0 auto 20px;
+}
+
+.modal-form__title{
+    width: 54px;
+    display: inline-block;
+    margin-right: 20px;
+    font-size: 20px;
+}
+
+.modal-form__input{
+    padding: 5px;
+}
+
+.modal-form__input:valid:focus{
+    outline-color: #7C6AFA;
+}
+
+.modal-form__input:invalid:focus{
+    outline-color: #fa4518;
+}
+
+.modal__close{
+    position: absolute;
+    top:2px;
+    right:8px;
+    font-size: 30px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.modal__close:hover{
+    cursor: pointer;
+    color: #7C6AFA;
+    transition: 0.2s;
+}
+
+.modal-form{
+    display:flex;
+    flex-direction: column;
+}
+
+.modal-form__button{
+    max-width: 170px;
+    width: 100%;
+    height: 38px;
+    margin: 0 auto;
+    font-size: 20px;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
 .header__icon{
     width: 40px;
     height: 40px;
@@ -89,10 +169,17 @@ p{
     margin: 0 56px 0 0;
 }
 
-.menu__items > a{
+.menu__link{
     text-decoration: none;
     color: #FFFFFF;
     line-height: 24px;
+    transition: 0.3s;
+}
+
+.menu__link:hover{
+    color: #624ac8;
+    transition: 0.3s;
+    opacity: 0.7;
 }
 
 .timer{
@@ -317,6 +404,7 @@ p{
     opacity: 0.5;
     line-height: 22px;
     font-size: 14px;
+    padding: 0 5px;
 }
 
 .section-4{
@@ -384,6 +472,7 @@ p{
 
 .logos{
     padding: 0;
+    margin: 0;
     list-style-type: none;
     display: flex;
     flex-direction: row;
@@ -417,4 +506,326 @@ p{
     max-width: 198px;
     width: 100%;
     height: auto;
+}
+
+.section-6{
+    padding: 150px 0 0 0;
+}
+
+.section-6__icon{
+    width: 127px;
+    height: 127px;
+    display: block;
+    margin: 0 auto;
+}
+
+.section-6 h2{
+    text-align: center;
+}
+
+.section-6__text{
+    max-width: 410px;
+    width: 100%;
+    text-align: center;
+    opacity: 0.5;
+    margin: 0 auto;
+}
+
+.schedule{
+    position: relative;
+    max-width: 750px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 90px auto 0;
+}
+
+.schedule__line{
+    position: absolute;
+    width: 6px;
+    height: 100%;
+    background: linear-gradient(94.26deg, #C89AFC 9.51%, #7C6AFA 90.23%);
+    z-index: 5;
+    top: -10px;
+    left:50%;
+    margin-left: -3px;
+}
+
+.schedule__element{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 0 60px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.schedule__title{
+    font-size: 14px;
+    opacity: 0.5;
+   line-height: 22px;
+}
+
+.schedule__text{
+    max-width: 228px;
+    width: 100%;
+}
+
+.schedule__element:nth-child(4n+2){
+    align-items: flex-end;
+    padding: 0 60px 0 0;
+    box-sizing: border-box;
+}
+
+.schedule__element:nth-child(4n+2)::after{
+    content: '';
+    position: absolute;
+    z-index: 5;
+    border: 1px solid #FFFFFF;
+    opacity: 0.3;
+    width: 40px;
+    top: 50px;
+    right: 0;
+}
+
+.schedule__element:nth-child(4n+1)::after{
+    content: '';
+    position: absolute;
+    z-index: 5;
+    border: 1px solid #FFFFFF;
+    opacity: 0.3;
+    width: 40px;
+    top: 50px;
+    left: 0;
+}
+
+.schedule__element:nth-child(4n+2) .schedule__title{
+    text-align: right;
+}
+
+.schedule__element:nth-child(4n+2) .schedule__text{
+    text-align: right;
+}
+
+.section-7{
+    padding: 230px 0 0 0;
+}
+
+.section-7__header{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.section-7__icon{
+    transform: rotate(180deg);
+}
+
+.section-7 h2{
+    margin: 0;
+}
+
+.section-7__icon{
+    width: 127px;
+    height: 127px;
+    display: block;
+}
+
+.our-teachers__wrapper{
+    width: 100%;
+}
+
+.our-teachers{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.our-teachers__element{
+    padding: 0 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.our-teachers__image{
+    max-width: 190px;
+    width: 100%;
+    max-height: 190px;
+    height: 100%;
+}
+
+.our-teachers__title{
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 34px;
+    text-align: center;
+    margin: 40px 0 0 0;
+}
+
+.our-teachers__text{
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    opacity: 0.8;
+}
+
+.our-teachers__link{
+    padding: 10px 30px;
+    margin: 30px 0 0 0;
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 50px;
+    transition: 0.3s;
+}
+
+.our-teachers__link:hover{
+    border: 1px solid #5f50ff;
+    opacity: 0.7;
+    transition: 0.3s;
+}
+
+footer{
+    padding: 200px 0 106px 0;
+}
+
+.footer-wrap{
+    max-width: 550px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-wrap h2{
+    margin: 0 0 25px 0;
+    text-align: center;
+}
+
+.footer-wrap p {
+    max-width: 410px;
+    width: 100%;
+    text-align: center;
+}
+
+/*for form in footer*/
+
+.footer-form-wrap{
+    max-width: 480px;
+    width: 100%;
+    text-align: center;
+    margin: 60px 0 0 0;
+}
+
+.footer-form-wrap__form{
+    display: flex;
+}
+
+.footer-form-wrap__email{
+    background: rgba(255, 255, 255, 0.25);
+    border-radius: 50px 0px 0px 50px;
+    padding: 11px 30px;
+    box-sizing: border-box;
+    max-width: 353px;
+    width: 100%;
+    outline: none;
+    border: 1px;
+    font-size: 14px;
+    line-height: 22px;
+    color: #FFFFFF;
+    opacity: 0.8;
+}
+
+.footer-form-wrap__subscribe{
+    width: 160px;
+    padding: 10px 30px;
+    color: #ffffff;
+    box-sizing: border-box;
+    text-align: center;
+    background: linear-gradient(94.78deg, #DF5950 11.19%, #451046 93.72%);
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 26px;
+    z-index: 5;
+    outline: none;
+    border: 0;
+    cursor: pointer;
+    margin: 0 0 0 -20px;
+    transition: 0.4s;
+}
+
+.footer-form-wrap__subscribe:hover{
+    opacity: 0.7;
+    transition: 0.3s;
+}
+
+.footer-form-wrap__email::placeholder{
+    color: #ffffff;
+    opacity: 0.8;
+    font-size: 14px;
+    line-height: 22px;
+    text-indent: 0;
+    transition: text-indent 0.3s ease;
+}
+
+.footer-form-wrap__email:invalid{
+    border: 1px red solid;
+}
+
+.footer-form-wrap__email:valid:focus{
+    border: 1px #bebebe solid;
+}
+
+.footer-form-wrap__email:focus.footer-form-wrap__email::placeholder{
+    text-indent: 300px;
+    transition: text-indent 0.3s ease;
+}
+
+/*social media icons*/
+
+.social-icon{
+    list-style-type: none;
+    padding: 0;
+    margin: 40px 0 0 0;
+    display: flex;
+    flex-direction: row;
+}
+
+.social-icon__element{
+    margin-right: 30px;
+    width: 50px;
+    height: 50px;
+}
+
+.social-icon__link{
+    transition: 0.3s;
+}
+
+.social-icon__link:hover{
+    opacity: 0.7;
+    transition: 0.3s;
+}
+
+/*for hamburger menu*/
+
+.hamburger-menu{
+    display: none;
+}
+
+/* Add animation for modal block */
+@keyframes modal-animation {
+    from {top:-300px; opacity:0}
+    55% {top:100px; opacity:0.7; width: 50%}
+    100% {top:0; opacity:1}
 }
