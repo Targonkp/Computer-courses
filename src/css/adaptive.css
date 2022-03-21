@@ -71,6 +71,10 @@
         height:550px;
     }
 
+    .header-top{
+        padding: 20px 30px;
+    }
+
     .header__icon{
         display: none;
     }
