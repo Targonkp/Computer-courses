@@ -2,14 +2,41 @@
   "name": "computer-courses",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "gulpfile.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "serve": "browser-sync start -s \"src\" -f \".\""
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "browserslist": [
+    "last 1 major version",
+    ">= 1%",
+    "Chrome >= 45",
+    "Firefox >= 38",
+    "Edge >= 12",
+    "Explorer >= 10",
+    "iOS >= 9",
+    "Safari >= 9",
+    "Android >= 4.4",
+    "Opera >= 30"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Targonkp/Computer-courses.git"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "browser-sync": "^2.27.5"
-  }
+    "browser-sync": "^2.27.9",
+    "del": "^6.1.1",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-csso": "^4.0.1",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-prettier": "^4.0.0",
+    "gulp-terser": "^2.1.0"
+  },
+  "bugs": {
+    "url": "https://github.com/Targonkp/Computer-courses/issues"
+  },
+  "homepage": "https://github.com/Targonkp/Computer-courses#readme"
 }
