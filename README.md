@@ -2,4 +2,4 @@
 
 1) **Каталог src** - исходные файлы для разработчика
 2) **Каталог dist** - готовые файлы сборки
-3)**Запуск проекта:** https://targonkp.github.io/Computer-courses/dist
+3) **Запуск проекта:** https://targonkp.github.io/Computer-courses/dist
